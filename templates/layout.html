@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>API WARS</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+
+</head>
+<body>
+    <div class="pill-nav">
+      <a class="active" href="{{ url_for('planet_list') }}">Planet list</a>
+      <a href="{{ url_for('login') }}">Login</a>
+      <a href="{{ url_for('logout') }}">Logout</a>
+        <a href="{{ url_for('register') }}">Register</a>
+<!--      <a href="#vote">Vote</a>-->
+    </div>
+
+    <h1>API WARS</h1>
+    <div class="content-wrapper">
+        {% block content %} {% endblock %}
+    </div>
+    {% extends "footer.html" %}
+</body>
