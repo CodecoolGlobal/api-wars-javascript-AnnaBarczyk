@@ -6007,9 +6007,9 @@ a.close.disabled {
   display: flex;
   -ms-flex-direction: column;
   flex-direction: column;
-  width: 100%;
+  width: 680px;
   pointer-events: auto;
-  background-color: #fff;
+  background-color: #00084a;
   background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 0.3rem;

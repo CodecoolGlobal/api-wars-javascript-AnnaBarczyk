@@ -22,7 +22,7 @@ def login():
 
         user_name_check = data_manager.check_login_user_name(login_data)
         password_check = data_manager.check_login_password(login_data)
-        if user_name_check == False or password_check == False:
+        if not user_name_check or not password_check:
             login_message = 'Username or password incorrect. Please try again.'
             return render_template('login.html', login_message=login_message)
         else:
